@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C6421BC5-2CF2-4567-BE96-822BDDEC73BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAuthToken.Example.API", "example\SimpleAuthToken.Example.API\SimpleAuthToken.Example.API.csproj", "{EFFE12B0-CEDF-46CF-937E-9663F0179344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAuthToken.Example.Client", "example\SimpleAuthToken.Example.Client\SimpleAuthToken.Example.Client.csproj", "{352D582F-92C9-48CA-AEE3-53D65D551093}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAuthToken", "src\SimpleAuthToken\SimpleAuthToken.csproj", "{0929D6A8-10E3-4197-B1AB-F37B4FBD8569}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{C6325EED-BF5F-4B95-A6F2-E19C59EE22C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFFE12B0-CEDF-46CF-937E-9663F0179344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFE12B0-CEDF-46CF-937E-9663F0179344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFE12B0-CEDF-46CF-937E-9663F0179344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFE12B0-CEDF-46CF-937E-9663F0179344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352D582F-92C9-48CA-AEE3-53D65D551093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352D582F-92C9-48CA-AEE3-53D65D551093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352D582F-92C9-48CA-AEE3-53D65D551093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352D582F-92C9-48CA-AEE3-53D65D551093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0929D6A8-10E3-4197-B1AB-F37B4FBD8569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0929D6A8-10E3-4197-B1AB-F37B4FBD8569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0929D6A8-10E3-4197-B1AB-F37B4FBD8569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0929D6A8-10E3-4197-B1AB-F37B4FBD8569}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0929D6A8-10E3-4197-B1AB-F37B4FBD8569} = {C6421BC5-2CF2-4567-BE96-822BDDEC73BB}
+		{EFFE12B0-CEDF-46CF-937E-9663F0179344} = {C6325EED-BF5F-4B95-A6F2-E19C59EE22C4}
+		{352D582F-92C9-48CA-AEE3-53D65D551093} = {C6325EED-BF5F-4B95-A6F2-E19C59EE22C4}
+	EndGlobalSection
+EndGlobal
