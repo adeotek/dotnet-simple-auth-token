@@ -20,7 +20,7 @@ namespace SimpleAuthToken
                 throw new Exception("Invalid secret key for authorization TOKEN generation");
             }
             
-            var token = ComputeSha256($"{issuer ?? string.Empty}-{secretKey}");
+            var token = ComputeSha256($"{issuer ?? string.Empty}-{secretKey}").ToUpper();
             var expiresAt = DateTime.UtcNow.AddMinutes(validity);
             var expiresAtHash = BitConverter.ToString(Encoding.ASCII.GetBytes(expiresAt.ToString("yyyy-MM-ddTHH:mm:ss"))).Replace("-", "");
             return ($"{publicKey}{token}{expiresAtHash}", expiresAt);
@@ -39,7 +39,7 @@ namespace SimpleAuthToken
                 throw new Exception("Invalid secret key for authorization TOKEN");
             }
             
-            var hash = ComputeSha256($"{issuer ?? string.Empty}-{secretKey}") ?? string.Empty;
+            var hash = ComputeSha256($"{issuer ?? string.Empty}-{secretKey}")?.ToUpper() ?? string.Empty;
             publicKey = token.Substring(0, token.Length - 102);
             var pToken = token.Substring(token.Length - 102, 64);
             if (!hash.Equals(pToken, StringComparison.InvariantCultureIgnoreCase))
